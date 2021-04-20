@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript tabs</title>
+    <link rel='stylesheet' href='styles.css'>
+</head>
+<body>
+<div class="hero">
+ <div class="btn-box">
+    <button id="btn1" onclick="openHTML()">Business</button>
+    <button id="btn2" onclick="openCSS()">Vacation</button>
+    <button id="btn3" onclick="openJS()">Logistics</button>
+ </div>
+
+<!-- first content  -->
+ <div id="content1" class="content">
+     <div class="content-left">
+         <h1>Book with ease</h1>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut possimus enim beatae 
+             harum consectetur adipisicing elit. Aut possimus enim beatae 
+             harum laboriosam a reiciendis, aperiam ipsum unde animi provident,   
+            harum laboriosam a reiciendis, aperiam ipsum unde animi provident, </p>
+            <a href="#">Learn more</a>
+     </div>
+     <div class="content-right">
+         <img src="/images/tabimage1 .jpg" alt="picture">
+     </div>
+    
+ </div>
+
+ <!-- second content  -->
+ <div id="content2" class="content">
+    <div class="content-left">
+        <h1>Convinience</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut possimus enim beatae 
+            harum  unde quasi cum! Lorem ipsum dolor sit amet consectetur 
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut possimus enim beatae 
+            harum laboriosam a reiciendis, aperiam ipsum unde animi provident,   
+           harum laboriosam a reiciendis, aperiam ipsum unde animi provident, </p>
+           <a href="#">Learn more</a>
+    </div>
+    <div class="content-right">
+        <img src="/images/tabimage2 .jpg" alt="picture">
+    </div>
+   
+</div>
+
+<!-- third content  -->
+<div id="content3" class="content">
+    <div class="content-left">
+        <h1>Enjoy trip</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut possimus enim beatae 
+            harum  Lorem ipsum dolor sit amet consectetur 
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut possimus enim beatae 
+            harum laboriosam a reiciendis, aperiam ipsum unde animi provident,   
+           harum laboriosam a reiciendis, aperiam ipsum unde animi provident, </p>
+           <a href="#">Learn more</a>
+    </div>
+    <div class="content-right">
+        <img src="/images/tabimage 3.jpg" alt="picture">
+    </div>
+   
+</div>
+</div>
+    
+
+<script>
+    const content1 =document.getElementById('content1');
+    const content2 =document.getElementById('content2');
+    const content3 =document.getElementById('content3');
+    const btn1 = document.getElementById('btn1');
+    const btn2 = document.getElementById('btn2');
+    const btn3 = document.getElementById('btn3');
+
+    const openHTML = ()=>{
+        content1.style.transform = 'translate(0px)';
+        content2.style.transform = 'translate(100%)';
+        content3.style.transform = 'translate(100%)';
+        btn1.style.borderBottom='2px solid red'
+        btn2.style.borderBottom='none'
+        btn3.style.borderBottom='none'
+        content1.style.transitionDelay='0.3s';
+        content1.style.transitionDelay='0s';
+        content1.style.transitionDelay='0s';
+    }
+
+    const openCSS = ()=>{
+        content1.style.transform = 'translate(100%)';
+        content2.style.transform = 'translate(0px)';
+        content3.style.transform = 'translate(100%)';
+        btn2.style.borderBottom='2px solid red'
+        btn3.style.borderBottom='none'
+        btn1.style.borderBottom='none'
+        content1.style.transitionDelay='0s';
+        content1.style.transitionDelay='0.3s';
+        content1.style.transitionDelay='0s';
+    }
+
+    const openJS = ()=>{
+        content1.style.transform = 'translate(100%)';
+        content2.style.transform = 'translate(100%)';
+        content3.style.transform = 'translate(0px)';
+        btn3.style.borderBottom='2px solid red'
+        btn2.style.borderBottom='none'
+        btn1.style.borderBottom='none'
+        content1.style.transitionDelay='0s';
+        content1.style.transitionDelay='0s';
+        content1.style.transitionDelay='0.3s';
+    }
+</script>
+</body>
+</html>

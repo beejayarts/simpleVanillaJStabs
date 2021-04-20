@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+.hero{
+    width: 80%;
+    position:relative;
+    margin: 100px auto;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+
+.btn-box{
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.btn-box button{
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 1rem 2rem ;
+    margin-right: 2rem;
+    font-size: 1.5rem;
+    color: green;
+    transition:all  3 linear;
+}
+
+ button:hover{
+    font-weight: bold;
+    color: red;
+
+}
+
+.content-right img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px;
+    align-self: center;
+    justify-self: center;
+}
+
+.content-right img:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:5% auto;
+    position: absolute;
+    transform: translateX(100%);
+    transition: 0.3s;
+}
+
+.content-left{
+    flex-basis: 40%;
+
+}
+
+.content-left p{
+    font-size:1rem ;
+    padding: 2rem 0;
+
+}
+
+.content-left a{
+    width: 150px;
+    display: block;
+    padding: 1rem 2rem;
+    border-radius: .2rem;
+    text-align: center;
+    color: white;
+    background-color:green ;
+    text-decoration: none;
+}
+
+.content-right{
+    flex-basis: 60%;
+    text-align: center;
+
+}
+
+#content1{
+    transform: translateX(0px);
+}
+
+/* media queries */
+@media only screen and (max-width:600px)  {
+    .btn-box{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content{
+        display: flex;
+       flex-direction: column;
+    }
+
+    .hero{
+        width: 80%;
+        position:relative;
+        margin: 10px auto;
+        height: 100vh;
+        overflow-y: visible;
+       
+        
+    }
+    
+.content-right img{
+    width: 100%;
+    border-radius: 30px;
+    align-self: center;
+    justify-self: center;
+    margin-top: 2rem;
+}
+}
